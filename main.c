@@ -7,6 +7,7 @@ int main()
 int continuerPartie=1 ;
 int niveau=0 ;
 int MAX=0,MIN = 1;
+printf(“\033[0;31m”);
 printf("choisir le niveau de difficulte : \n") ;
 printf("1 = entre 1 et 100.\n2 = entre 1 et 1000.\n3 = entre 1 et 10000.\n") ;
 printf("Quel niveau choisissez vous ? tapez son numero : ");
