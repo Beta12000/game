@@ -42,8 +42,8 @@ do
 {
 printf("What number is it ? ");
 scanf("%d",&nbr) ;
-if(nbr<nombreMystere){printf("It's more than %d !\n ",nbr);nbrcoup++;}
-else if (nbr>nombreMystere){printf("it's less than %d !\n",nbr);nbrcoup++;}
+if(nbr<nombreMystere){printf("\033[0;34m");printf("It's more than %d !\n ",nbr);printf("\033[0m");nbrcoup++;}
+else if (nbr>nombreMystere){printf("\033[0;33m");printf("it's less than %d !\n",nbr);printf("\033[0m") ;nbrcoup++;}
 else {printf("\033[0;32m");printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);printf("\033[0m");}
 
 }while(nbr!=nombreMystere) ;
