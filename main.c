@@ -8,9 +8,9 @@ int continuerPartie=1 ;
 int niveau=0 ;
 int MAX=0,MIN = 1;
 printf("\033[0;31m");
-printf("choisir le niveau de difficulte : \n") ;
-printf("1 = entre 1 et 100.\n2 = entre 1 et 1000.\n3 = entre 1 et 10000.\n") ;
-printf("Quel niveau choisissez vous ? tapez son numero : ");
+printf("choose the level of difficulty : \n") ;
+printf("1 = between 1 and 100.\n2 = between 1 and 1000.\n3 = between 1 and 10000.\n") ;
+printf("which level you will choose ? type his number : ");
 scanf("%d",&niveau);
 switch(niveau)
 {
@@ -24,7 +24,7 @@ case 3 :
     MAX =10000 ;
     break;
 default :
-    printf("\nle numero que vous avez saisie est invalide\n") ;
+    printf("\n***Error,you entered is invalid number ***\n") ;
     continuerPartie=0 ;
     break;
 }
@@ -39,14 +39,14 @@ nbr=0;
 nbrcoup=1 ;
 do
 {
-printf("Quel est le nombre ? ");
+printf("What number is it ? ");
 scanf("%d",&nbr) ;
-if(nbr<nombreMystere){printf("c'est plus!\n ");nbrcoup++;}
-else if (nbr>nombreMystere){printf("c'est moins!\n");nbrcoup++;}
-else {printf("Bravo,vous avez trouve le nombre mystere en %d coups \n",nbrcoup);}
+if(nbr<nombreMystere){printf("It's more than %d !\n ",nbr);nbrcoup++;}
+else if (nbr>nombreMystere){printf("it's less than %d !\n",nbr);nbrcoup++;}
+else {printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);}
 
 }while(nbr!=nombreMystere) ;
-printf("\n si vous voulez rejouer tapez 1 sinon 0 pour quitter :\n ") ;
+printf("\n if you want to replay type 1 otherwise 0 to quit :\n ") ;
 scanf("%d",&continuerPartie) ;
 }
 return 0 ;
