@@ -5,6 +5,8 @@
 int main()
 {
 int continuerPartie=1 ;
+while(continuerPartie)
+{
 int niveau=0 ;
 int MAX=0,MIN = 1;
 printf("\033[0m");
@@ -32,8 +34,6 @@ default :
 
 int nombreMystere ;
 int nbr,nbrcoup ;
-while(continuerPartie)
-{
 srand(time(NULL));
 nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
 nbr=0;
