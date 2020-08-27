@@ -24,6 +24,7 @@ case 3 :
     MAX =10000 ;
     break;
 default :
+    printf("\033[0;31m") ;
     printf("\n***Error,you entered is invalid number ***\n") ;
     continuerPartie=0 ;
     break;
@@ -43,7 +44,7 @@ printf("What number is it ? ");
 scanf("%d",&nbr) ;
 if(nbr<nombreMystere){printf("It's more than %d !\n ",nbr);nbrcoup++;}
 else if (nbr>nombreMystere){printf("it's less than %d !\n",nbr);nbrcoup++;}
-else {printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);}
+else {printf("\033[0;32m");printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);printf("\033[0m");}
 
 }while(nbr!=nombreMystere) ;
 printf("\n if you want to replay type 1 otherwise 0 to quit :\n ") ;
