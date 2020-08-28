@@ -45,9 +45,10 @@ if(nbr<nombreMystere){printf("\033[0;34m");printf("It's more than %d !\n ",nbr);
 else if (nbr>nombreMystere){printf("\033[0;33m");printf("it's less than %d !\n",nbr);printf("\033[0m") ;nbrcoup++;}
 else {printf("\033[0;32m");printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);printf("\033[0m");}
 
-}while(nbr!=nombreMystere) 
+}
+if (continuerPartie==1){
 printf("\n if you want to replay type 1 otherwise 0 to quit :\n ") ;
-scanf("%d",&continuerPartie) ;
+scanf("%d",&continuerPartie) ;}
 }
 return 0 ;
 }
