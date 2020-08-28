@@ -28,7 +28,7 @@ case 3 :
 default :
     printf("\033[0;31m") ;
     printf("\n***Error,you entered invalid number ***\n") ;
-    continuerPartie=0
+    continuerPartie=0 ;
     break;
 }
 
