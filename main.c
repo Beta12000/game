@@ -28,7 +28,7 @@ case 3 :
 default :
     printf("\033[0;31m") ;
     printf("\n***Error,you entered invalid number ***\n") ;
-    continuerPartie=0 ;
+    continuerPartie=0
     break;
 }
 
@@ -38,7 +38,7 @@ srand(time(NULL));
 nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
 nbr=0;
 nbrcoup=1 ;
-do
+while(nbr!=nombreMystere && continuerPartie=1)
 {
 printf("What number is it ? ");
 scanf("%d",&nbr) ;
@@ -46,7 +46,7 @@ if(nbr<nombreMystere){printf("\033[0;34m");printf("It's more than %d !\n ",nbr);
 else if (nbr>nombreMystere){printf("\033[0;33m");printf("it's less than %d !\n",nbr);printf("\033[0m") ;nbrcoup++;}
 else {printf("\033[0;32m");printf("***Well done, you have found the mystery number in %d attempts*** \n",nbrcoup);printf("\033[0m");}
 
-}while(nbr!=nombreMystere) ;
+}while(nbr!=nombreMystere) 
 printf("\n if you want to replay type 1 otherwise 0 to quit :\n ") ;
 scanf("%d",&continuerPartie) ;
 }
