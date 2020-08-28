@@ -5,6 +5,9 @@
 int main()
 {
 int continuerPartie=1 ;
+int nombreMystere=1 ;
+int nbr=0,nbrcoup=1 ;
+srand(time(NULL));
 while(continuerPartie)
 {
 int niveau=0 ;
@@ -31,13 +34,9 @@ default :
     continuerPartie=0 ;
     break;
 }
-
-int nombreMystere ;
-int nbr,nbrcoup ;
-srand(time(NULL));
 nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
 nbr=0;
-nbrcoup=1 ;
+nbrcoup=1;
 while(nbr!=nombreMystere && continuerPartie=1)
 {
 printf("What number is it ? ");
