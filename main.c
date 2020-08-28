@@ -37,7 +37,7 @@ default :
 nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
 nbr=0;
 nbrcoup=1;
-while(nbr!=nombreMystere && continuerPartie=1)
+while(nbr!=nombreMystere && continuerPartie==1)
 {
 printf("What number is it ? ");
 scanf("%d",&nbr) ;
